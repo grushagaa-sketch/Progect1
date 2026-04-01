@@ -3,6 +3,11 @@ from django.contrib.auth.models import User
 from django.core.validators import MinLengthValidator
 from django.db import models
 from django.urls import reverse
+from django.utils.text import slugify
+
+
+def unicode_slugify(value):
+    return slugify(value, allow_unicode=True)
 
 
 class Tag(models.Model):
@@ -43,7 +48,8 @@ class Note(models.Model):
         populate_from='name',
         unique=True,
         always_update=False,
-        max_length=255)
+        max_length=255,
+        slugify=unicode_slugify)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
