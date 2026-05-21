@@ -1,0 +1,8 @@
+booking.json
+1. Подсчитать кол-во строк
+2. Найти самую длинную и самую короткую строку
+3. Создать новый файл с тем же содержимым, но в кодировке cp2151
+4. Создать новый файл, заменив названия ключей
+arrivaldate -> arrivalDate,
+stayingdate -> stayingDate,
+departuredate -> departureDate

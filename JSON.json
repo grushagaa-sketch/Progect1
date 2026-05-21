@@ -1,0 +1,11 @@
+{
+  "bookings": [
+    {
+      "id": 7087959,
+      "arrivaldate": "2022-03-10",
+      "stayingdate": "2022-03-11",
+      "departuredate": "2022-03-11",
+      "hotel": {
+        "id": 332,
+        "name": "hotel332"
+      },
